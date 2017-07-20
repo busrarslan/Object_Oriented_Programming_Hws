@@ -1,0 +1,14 @@
+MOV R4, 0      ;line 1
+MOV R1, 10     ;line 2
+MOV R1 , R2    ;line 3
+MOV R2, R3     ;line 4
+SUB R2 , 1     ;line 5
+JMP R2 , 9     ;line 6
+ADD R3 , R1    ;line 7
+JMP 5          ;line 8
+ADD R4 , R3    ;line 9
+SUB R1, 1      ;line 10
+JMP R1, 13     ;line 11
+JMP 3          ;line 12
+PRN R4         ;line 13
+HLT            ;line 14
