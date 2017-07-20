@@ -1,0 +1,87 @@
+MOV #0, 30 ;  bubble sort algoritmasi kullanildi. ana dongu 10 kez dondurulerek kucukten buyuge siralandi.
+MOV #1, 23 ;
+MOV #2, 4  ;
+MOV #3, 56 ;
+MOV #4, 34 ;
+MOV #5, 56 ;
+MOV #6, 89 ;  memory adreslerine verilen constantlari atandi
+MOV #7, 32 ;
+MOV #8, 45 ;
+MOV #9, 25 ;
+MOV R5, 10 ;sayac
+MOV #0, R1 ;
+MOV #1, R2 ;
+MOV #1, R3 ;
+SUB R2, R1 ;
+JPN R2, 18 ;  eger r2-r1 farki sifirdan kucuk veya esitse yerleri degistirilir
+JMP 20     ;  degilse degistirilmeden bir sonraki degerlere gecilir
+MOV R3, #0 ;
+MOV R1, #1 ;
+MOV #1, R1 ;
+MOV #2, R2 ;
+MOV #2, R3 ;         0-1 ,1-2, 2-3, 3-4, 4-5, 5-6, 6-7, 7-8, 8-9 arasindaki iliskiye bakilir sirayla
+SUB R2, R1 ;         bu islem 10 kez tekrarlandiginda kucukten buyuge siraya girmis olur
+JPN R2, 26 ;
+JMP 28     ;
+MOV R3, #1 ;
+MOV R1, #2 ;
+MOV #2, R1 ;
+MOV #3, R2 ;
+MOV #3, R3 ;
+SUB R2, R1 ;
+JPN R2, 34 ;
+JMP 36     ;
+MOV R3, #2 ;
+MOV R1, #3 ;
+MOV #3, R1 ;
+MOV #4, R2 ;
+MOV #4, R3 ;
+SUB R2, R1 ;
+JPN R2, 42 ;
+JMP 44     ;
+MOV R3, #3 ;
+MOV R1, #4 ;
+MOV #4, R1 ;
+MOV #5, R2 ;
+MOV #5, R3 ;
+SUB R2, R1 ;
+JPN R2, 50 ;
+JMP 52     ;
+MOV R3, #4 ;
+MOV R1, #5 ;
+MOV #5, R1 ;
+MOV #6, R2 ;
+MOV #6, R3 ;
+SUB R2, R1 ;
+JPN R2, 58 ;
+JMP 60     ;
+MOV R3, #5 ;
+MOV R1, #6 ;
+MOV #6, R1 ;
+MOV #7, R2 ;
+MOV #7, R3 ;
+SUB R2, R1 ;
+JPN R2, 66 ;
+JMP 68     ;
+MOV R3, #6 ;
+MOV R1, #7 ;
+MOV #7, R1 ;
+MOV #8, R2 ;
+MOV #8, R3 ;
+SUB R2, R1 ;
+JPN R2, 74 ;
+JMP 76     ;
+MOV R3, #7 ;
+MOV R1, #8 ;
+MOV #8, R1 ;
+MOV #9, R2 ;
+MOV #9, R3 ;
+SUB R2, R1 ;
+JPN R2, 82 ;
+JMP 84     ;
+MOV R3, #8 ;
+MOV R1, #9 ;
+SUB R5, 1  ;
+JMP R5, 87 ;
+JMP 12     ;  ana dongu 10 kez doner
+HLT        ;
