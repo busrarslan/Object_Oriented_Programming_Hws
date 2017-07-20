@@ -1,0 +1,14 @@
+moV r4,0;line 1, R4 registerina ilk deger atama
+MOV R1,10 ;line 2, R1 registeri ana dongu icin 10'dan 1'e kadarki sayilari göstermek icin kullanildi
+MOV r1,R2 ;line 3, R2 registeri bir sayinin karesi alinirken toplama islemi dongusu for'daki i gibi kullanildi
+MOV r2, R3;line 4, R3 registeri sayiyi kendisi kadar toplar.
+   SUB R2,1;line 5, ic dongu baslangici, i degerini birer birer azaltiyorum
+JMP R2 , 9 ;line 6, R2 registeri sifirlandiginda sayinin karesi ana toplam degerine atilir
+ADD R3  , R1;
+  JMP 5;line 8, ic dongu  
+AdD R4 , R3     ;line 9, tum sayilarinin karelerinin toplandigi register,ilk degeri ilk basta verildi
+SuB R1, 1;
+JMP R1, 13     ;line 11, R1 registeri sifirlandiginda tum sayilarin karesi alinmis olup print edilir
+      JMp 3;line 12, tum sayilarin kareleri icin ayni islem tekrari icin dongu
+pRN r4;line 13, 1'den 10'a kadar(10 dahil) olan sayilarin karelerinin toplamini ekrana basar
+hlt;line 14, program bitisi
